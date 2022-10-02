@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    height: 100vh;
+    position: relative;
+    background-color: hsl(212, 45%, 89%);
+}
+
+.wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -275px;
+    margin-left: -160px;
+    width: 320px;
+    height: 550px;
+    padding: 2rem;
+    border-radius: 2rem;
+    background-color: hsl(0, 0%, 100%);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.wrap .qr {
+    display: block;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.wrap .title {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: hsl(218, 44%, 22%);
+}
+
+.wrap .description {
+    margin-bottom: 3rem;
+    color: hsl(220, 15%, 55%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (orientation: landscape) and (max-height: 599px) {
+    body {
+        height: 200vh;
+    }
+}
